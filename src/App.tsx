@@ -3,6 +3,16 @@ import centralExecutiveData from './data/central_executive.json';
 import andhraPradeshData from './data/andhra_pradesh.json';
 import arunachalPradeshData from './data/arunachal_pradesh.json';
 import assamData from './data/assam.json';
+import biharData from './data/bihar.json';
+import chhattisgarhData from './data/chhattisgarh.json';
+import goaData from './data/goa.json';
+import gujaratData from './data/gujarat.json';
+import haryanaData from './data/haryana.json';
+import himachalPradeshData from './data/himachal_pradesh.json';
+import jharkhandData from './data/jharkhand.json';
+import karnatakaData from './data/karnataka.json';
+import keralaData from './data/kerala.json';
+import madhyaPradeshData from './data/madhya_pradesh.json';
 
 interface MLA {
   constituency_no: number;
@@ -28,6 +38,16 @@ const statesCatalog: Record<string, StateData> = {
   andhra_pradesh: andhraPradeshData as StateData,
   arunachal_pradesh: arunachalPradeshData as StateData,
   assam: assamData as StateData,
+  bihar: biharData as StateData,
+  chhattisgarh: chhattisgarhData as StateData,
+  goa: goaData as StateData,
+  gujarat: gujaratData as StateData,
+  haryana: haryanaData as StateData,
+  himachal_pradesh: himachalPradeshData as StateData,
+  jharkhand: jharkhandData as StateData,
+  karnataka: karnatakaData as StateData,
+  kerala: keralaData as StateData,
+  madhya_pradesh: madhyaPradeshData as StateData,
 };
 
 type Tab = 'assembly' | 'central_raw' | 'state_raw' | 'api_docs';
@@ -115,11 +135,11 @@ export default function App() {
               <h1 className="text-base font-bold text-white tracking-tight flex items-center gap-2">
                 India Political Data Engine
                 <span className="text-[10px] font-mono uppercase bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-2 py-0.5 rounded-full">
-                  Batch 1 & 2 Loaded
+                  Batches 1 to 7 Loaded
                 </span>
               </h1>
               <p className="text-xs text-neutral-400 hidden sm:block">
-                Union Executive + Andhra Pradesh (175) + Arunachal Pradesh (60) + Assam (126)
+                Central + AP + AR + AS + BR + CG + GA + GJ + HR + HP + JH + KA + KL (140) + MP (230)
               </p>
             </div>
           </div>
@@ -179,6 +199,106 @@ export default function App() {
               }`}
             >
               Assam (126)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('bihar'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'bihar'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Bihar (243)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('chhattisgarh'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'chhattisgarh'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Chhattisgarh (90)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('goa'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'goa'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Goa (40)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('gujarat'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'gujarat'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Gujarat (182)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('haryana'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'haryana'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Haryana (90)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('himachal_pradesh'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'himachal_pradesh'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Himachal Pradesh (68)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('jharkhand'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'jharkhand'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Jharkhand (81)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('karnataka'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'karnataka'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Karnataka (224)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('kerala'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'kerala'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Kerala (140)
+            </button>
+            <button
+              onClick={() => { setSelectedStateKey('madhya_pradesh'); setSelectedDistrict('ALL'); setSelectedParty('ALL'); }}
+              className={`px-3 py-1 rounded-md text-xs font-medium transition ${
+                selectedStateKey === 'madhya_pradesh'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'bg-neutral-900/80 text-neutral-400 hover:text-neutral-200 border border-neutral-800'
+              }`}
+            >
+              Madhya Pradesh (230)
             </button>
           </div>
 
