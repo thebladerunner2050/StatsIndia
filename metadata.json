@@ -1,0 +1,8 @@
+{
+  "name": "StatsIndia - India Data & Statistics Explorer",
+  "description": "Comprehensive interactive statistical dashboard, state-by-state comparisons, economic indicators, demographic insights, and data visualization portal for India.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
