@@ -1,0 +1,66 @@
+{
+  "union_executive": {
+    "president": {
+      "name": "Droupadi Murmu",
+      "tenure_start": "2022"
+    },
+    "vice_president": {
+      "name": "Jagdeep Dhankhar",
+      "tenure_start": "2022"
+    },
+    "prime_minister": {
+      "name": "Narendra Modi",
+      "tenure_start": "2014"
+    },
+    "key_cabinet_ministers": [
+      {
+        "portfolio": "Home Affairs & Cooperation",
+        "name": "Amit Shah"
+      },
+      {
+        "portfolio": "Defence",
+        "name": "Rajnath Singh"
+      },
+      {
+        "portfolio": "Road Transport & Highways",
+        "name": "Nitin Gadkari"
+      },
+      {
+        "portfolio": "Health & Family Welfare, Chemicals & Fertilizers",
+        "name": "Jagat Prakash Nadda"
+      },
+      {
+        "portfolio": "Agriculture & Farmers Welfare, Rural Development",
+        "name": "Shivraj Singh Chouhan"
+      },
+      {
+        "portfolio": "Finance & Corporate Affairs",
+        "name": "Nirmala Sitharaman"
+      },
+      {
+        "portfolio": "External Affairs",
+        "name": "S. Jaishankar"
+      },
+      {
+        "portfolio": "Education",
+        "name": "Dharmendra Pradhan"
+      },
+      {
+        "portfolio": "Commerce & Industry",
+        "name": "Piyush Goyal"
+      },
+      {
+        "portfolio": "Railways, Information & Broadcasting, Electronics & IT",
+        "name": "Ashwini Vaishnaw"
+      },
+      {
+        "portfolio": "Environment, Forest & Climate Change",
+        "name": "Bhupender Yadav"
+      },
+      {
+        "portfolio": "Law & Justice",
+        "name": "Arjun Ram Meghwal"
+      }
+    ]
+  }
+}

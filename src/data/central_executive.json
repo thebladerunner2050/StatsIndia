@@ -1,0 +1,40 @@
+{
+  "union_executive": {
+    "president": {
+      "name": "Droupadi Murmu",
+      "tenure_start": "2022",
+      "constitutional_role": "Head of State & Supreme Commander of Armed Forces"
+    },
+    "vice_president": {
+      "name": "Jagdeep Dhankhar",
+      "tenure_start": "2022",
+      "constitutional_role": "Ex-Officio Chairman of Rajya Sabha"
+    },
+    "prime_minister": {
+      "name": "Narendra Modi",
+      "tenure_start": "2014",
+      "constitutional_role": "Head of Government & Leader of Union Cabinet"
+    },
+    "speaker_lok_sabha": {
+      "name": "Om Birla",
+      "tenure_start": "2019"
+    },
+    "key_cabinet_ministers": [
+      { "portfolio": "Defence", "name": "Rajnath Singh", "party": "BJP" },
+      { "portfolio": "Home Affairs", "name": "Amit Shah", "party": "BJP" },
+      { "portfolio": "Road Transport & Highways", "name": "Nitin Gadkari", "party": "BJP" },
+      { "portfolio": "Health & Family Welfare", "name": "Jagat Prakash Nadda", "party": "BJP" },
+      { "portfolio": "Agriculture & Farmers Welfare", "name": "Shivraj Singh Chouhan", "party": "BJP" },
+      { "portfolio": "Finance & Corporate Affairs", "name": "Nirmala Sitharaman", "party": "BJP" },
+      { "portfolio": "External Affairs", "name": "Subrahmanyam Jaishankar", "party": "BJP" },
+      { "portfolio": "Education", "name": "Dharmendra Pradhan", "party": "BJP" },
+      { "portfolio": "Railways, I&B, Electronics & IT", "name": "Ashwini Vaishnaw", "party": "BJP" },
+      { "portfolio": "Commerce & Industry", "name": "Piyush Goyal", "party": "BJP" },
+      { "portfolio": "Heavy Industries & Steel", "name": "H. D. Kumaraswamy", "party": "JD(S)" },
+      { "portfolio": "Civil Aviation", "name": "Kinjarapu Ram Mohan Naidu", "party": "TDP" },
+      { "portfolio": "Panchayati Raj & Fisheries", "name": "Rajiv Ranjan Singh (Lalan Singh)", "party": "JD(U)" },
+      { "portfolio": "Food Processing Industries", "name": "Chirag Paswan", "party": "LJPRV" },
+      { "portfolio": "Parliamentary Affairs & Minority Affairs", "name": "Kiren Rijiju", "party": "BJP" }
+    ]
+  }
+}
